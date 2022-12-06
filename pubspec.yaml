@@ -64,6 +64,19 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
+  assets:
+    - img/brasil_logo.png
+    - img/cliente1.png
+    - img/cliente2.png
+    - img/detalhe_cliente.png
+    - img/detalhe_contato.png
+    - img/detalhe_servico.png
+    - img/detalhe_empresa.png
+    - img/menu_cliente.png
+    - img/menu_contato.png
+    - img/menu_empresa.png
+    - img/menu_servico.png
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

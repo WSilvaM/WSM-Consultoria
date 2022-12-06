@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(MaterialApp(home: HomePage()));
 }
 
 class HomePage extends StatefulWidget {
@@ -16,9 +16,37 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(''),
+        title: Text(
+          'WSM Consultoria',
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.green,
       ),
-      body: Container(),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 75),
+        child: Column(
+          children: [
+            Image.asset("img/brasil_logo.png"),
+            SizedBox(
+              height: 40,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image.asset("img/menu_empresa.png"),
+                Image.asset("img/menu_servico.png"),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              Image.asset("img/menu_cliente.png"),
+              Image.asset("img/menu_contato.png"),
+            ])
+          ],
+        ),
+      ),
     );
   }
 }
